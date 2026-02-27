@@ -24,7 +24,7 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../img/gallery-img-03-tn.jpg);
+  background-image: url(../img/bruh.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -287,7 +287,6 @@ p {
   background-color: #494752;
   color: white;
 }
-
 .tm-btn-gray:hover {
   background-color: #77757d;
   color: white;
@@ -320,12 +319,15 @@ footer {
 .tm-text-highlight {
   color: white;
 }
+
 .tm-text-highlight:hover {
   color: red;
 }
+
 .tm-main-content.tm-footer-relative {
   flex-direction: column;
 }
+
 .tm-main-content.tm-footer-relative footer {
   position: relative;
   bottom: 0;
@@ -338,10 +340,16 @@ footer {
   padding: 10px 30px;
 }
 
+/* Remove a cor de fundo escura da imagem */
+.image-container {
+  background-color: #fff; /* Cor de fundo clara */
+}
+
 a,
 button {
   transition: all 0.3s ease;
 }
+
 a:hover,
 a:focus {
   text-decoration: none;
@@ -415,4 +423,13 @@ p:last-child {
   .fa-3x {
     font-size: 2.2em;
   }
+}
+
+/* Ajuste para imagens */
+img {
+  width: 100%;
+  height: auto;
+  display: block; /* Garante que a imagem não tenha espaços em branco ao redor */
+  max-width: 100%; /* Evita que a imagem ultrapasse os limites da tela */
+  object-fit: cover; /* Garante que a imagem se ajuste adequadamente */
 }
